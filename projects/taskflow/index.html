@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="TaskFlow — a focused productivity dashboard built with HTML, CSS and JavaScript.">
+  <title>TaskFlow — Productivity Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="app">
+    <header>
+      <div><span class="eyebrow">PRODUCTIVITY</span><h1>TaskFlow</h1><p>Plan clearly. Focus deeply. Ship consistently.</p></div>
+      <button id="themeBtn" aria-label="Toggle theme">◐</button>
+    </header>
+    <section class="composer"><input id="taskInput" placeholder="What needs to be done?" aria-label="New task"><select id="priority"><option>High</option><option selected>Medium</option><option>Low</option></select><button id="addBtn">Add task</button></section>
+    <section class="stats"><article><b id="total">0</b><span>Total</span></article><article><b id="done">0</b><span>Completed</span></article><article><b id="progress">0%</b><span>Progress</span></article></section>
+    <section><div class="section-head"><h2>Today</h2><button id="clearBtn" class="ghost">Clear completed</button></div><ul id="taskList"></ul></section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
